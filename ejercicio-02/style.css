@@ -59,6 +59,22 @@ body {
   font-family: var(--font-sans);
 }
 /* Layout */
+ .contenedor-banner {
+   background-color: rgb(252, 255, 80);
+ }
+ .contenedor-banner h2{
+   font-size: 30px;
+   text-align: left;
+   padding-left: 30px;
+   padding-top: 30px;
+ }
+ .contenedor-banner p{
+   text-align: left;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }
 
 /* Componentes */
 
