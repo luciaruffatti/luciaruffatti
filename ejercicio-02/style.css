@@ -1,3 +1,9 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+html { font-family: 'Inter var', sans-serif; }
+}
+
 /* Reset */
 *,
 *::before,
@@ -50,8 +56,7 @@ picture {
 
 /* Variables */
 :root {
-  --font-sans: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
-  /* --size-outline: 3px; // Esto es para cambiar el outline del helper */
+font-family: 'Inter var', sans-serif;
 }
 
 /* Base */
@@ -59,18 +64,78 @@ body {
   font-family: var(--font-sans);
 }
 /* Layout */
- .contenedor-banner {
-   background-color: rgb(252, 255, 80);
+
+.nav-bar {
+  background-color: #a7caff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-bar img{
+width: 150px;
+margin-left: 30px;
+}
+
+.contenedor-banner1 {
+      background-image: url(https://res.cloudinary.com/dy9sakdz0/image/upload/v1645548411/cecf8aae355fd66186a5430d68005f8c_pkqrhn.jpg);
  }
- .contenedor-banner h2{
+
+ .contenedor-banner1 h2{
+   font-size: 60px;
+   line-height: 1;
+   text-align: left;
+   padding-left: 30px;
+   padding-top: 30px;
+ }
+ .contenedor-banner1 p{
+   text-align: left;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }
+
+ .contenedor-banner2 {
+   background-color: #a7caff;
+ }
+
+ .contenedor-banner2 h2{
+   color: aliceblue;
    font-size: 30px;
    text-align: left;
    padding-left: 30px;
    padding-top: 30px;
  }
- .contenedor-banner p{
+ .contenedor-banner2 p{
+   color: aliceblue;
    text-align: left;
    padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }
+
+ .contenedor-banner3 {
+ }
+
+ .contenedor-banner3 h2{
+   font-size: 30px;
+   text-align: left;
+   padding-left: 30px;
+   padding-top: 30px;
+ }
+ .contenedor-banner3 p{
+   text-align: left;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }
+
+ .footer {
+   color: aliceblue;
+   background-color: black;
+     padding-left: 30px;
    padding-right: 30px;
    padding-top: 30px;
    padding-bottom: 30px;
