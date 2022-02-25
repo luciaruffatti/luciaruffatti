@@ -76,7 +76,6 @@ picture {
  font-family: var(--f-family2);
  font-size: var(--f-size);
  font-size: 80px;
- text-align: center;
 }
 .fontfamily2 span {
   font-family: var(--f-family2);
@@ -88,19 +87,27 @@ picture {
 /* Componentes */
 
 .contenedor1 {
-  width: 90vw;
-  height: 400px;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 90vw;
+  height: 100vh;
   margin: auto;
 }
 
-.logo {
-  height: 25px;
-  margin-top: 40px;
+.ejemplo {
+  flex: 1;
+  gap: 20px;
+  height: 0.1px;
 }
 
-.logotexto {
-  padding-left: 100px;
-  padding-top: 0px;
+.logo-contenedor {
+  padding-top: 40px;
+  display: flex;
+  justify-items: center;
+  gap: 20px;
+}
+.logo {
+  height: 25px;
 }
 
 .descripcion {
@@ -110,7 +117,6 @@ picture {
 .listen {
   height: 80px;
   margin-left: auto;
-  margin-right: auto;
 }
 
 /* Utilidades */
